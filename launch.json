@@ -7,11 +7,14 @@
             "name": ".NET Core Launch",
             "program": "${workspaceFolder}\\src\\OHL.O2W.Api\\bin\\Debug\\net8.0\\OHL.O2W.Api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}\\src\\OHL.O2W.Api",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
             "pipeTransport": {
-                "pipeCwd": "${workspaceFolder}",
+                "pipeCwd": "${workspaceFolder}\\src\\OHL.O2W.Api",
                 "pipeProgram": "cmd",
                 "pipeArgs": ["/c"],
                 "debuggerPath": "C:\\MyTool\\netcoredbg-win64\\netcoredbg\\netcoredbg.exe",
